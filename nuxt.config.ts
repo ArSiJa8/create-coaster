@@ -45,6 +45,12 @@ export default defineNuxtConfig({
     client: 'hidden'
   },
 
+  nitro: {
+    prerender: {
+      ignore: ['/__nuxt_content']
+    }
+  },
+
   colorMode: {
       preference: 'dark',
       fallback: 'dark',

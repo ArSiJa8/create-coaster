@@ -21,6 +21,6 @@ html, body {
 /*---------------------------------------------------
 Hero
  --------------------------------------------------*/
-root {
-    --hero-bg-image: url('/images/mountainlight.png');
+:root {
+    --hero-bg-image: url('/images/mountainday.png');
 }
