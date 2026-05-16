@@ -3,15 +3,15 @@ import { computed } from 'vue'
 
 const colorMode = useColorMode()
 
-// Reaktiver Zustand für das Theme
+
 const darkmode = computed(() => colorMode.value === 'dark')
 
-// Theme umschalten
+
 const toggleTheme = () => {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
 }
 
-// Öffnet Google in einem neuen Tab
+
 const handleDiscordClick = () => {
   window.open('https://discord.gg/68x6uU3s', '_blank')
 }
@@ -66,7 +66,7 @@ const handleModrinthClick = () => {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* --- GEMEINSAME MINECRAFT BUTTON BASIS --- */
+/* --- MINECRAFT BUTTON BASIS --- */
 .mc-button {
   outline: none;
   border: none;
@@ -90,7 +90,7 @@ const handleModrinthClick = () => {
 }
 
 
-/* --- SPEZIFISCH: DISCORD BUTTON --- */
+/* --- DISCORD BUTTON --- */
 .mc-button-discord {
   max-width: 50%;
   min-width: 40%;
@@ -131,7 +131,7 @@ const handleModrinthClick = () => {
 }
 
 
-/* --- SPEZIFISCH: MODRINTH BUTTON (GRÜN) --- */
+/* --- MODRINTH BUTTON (GREEN) --- */
 .mc-button-modrinth {
   max-width: 50%;
   min-width: 40%;
@@ -171,7 +171,7 @@ const handleModrinthClick = () => {
 }
 
 
-/* --- SPEZIFISCH: THEME TOGGLE BUTTON (OBEN RECHTS) --- */
+/* --- THEME TOGGLE BUTTON --- */
 .mc-toggle-btn {
   position: fixed;
   top: 20px;
@@ -280,12 +280,12 @@ const handleModrinthClick = () => {
 }
 
 
-/* --- RESPONSIVE MEDIA QUERIES (KOMPLETT ZENTRIERT FÜR MOBILE) --- */
+/* --- RESPONSIVE MEDIA QUERIES --- */
 @media (max-width: 768px) {
   .hero-section {
     padding: 0 24px;
-    justify-content: center; /* Zentriert die Inhaltsbox horizontal auf dem Screen */
-    text-align: center;      /* Zentriert alle Textelemente */
+    justify-content: center;
+    text-align: center;
   }
 
   .hero-content {
@@ -294,7 +294,7 @@ const handleModrinthClick = () => {
     padding-right: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;     /* Zentriert h1, h2 und die Buttons untereinander */
+    align-items: center;
   }
 
   .hero-title {
@@ -314,7 +314,7 @@ const handleModrinthClick = () => {
     gap: 16px;
     width: 100%;
     max-width: 290px;
-    align-items: center;     /* Zentriert die Buttons im Button-Container */
+    align-items: center;
   }
 
   .mc-button-discord,
