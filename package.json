@@ -33,5 +33,8 @@
       "@sentry/cli",
       "better-sqlite3"
     ]
+  },
+  "devDependencies": {
+    "@nuxtjs/seo": "^5.1.3"
   }
 }

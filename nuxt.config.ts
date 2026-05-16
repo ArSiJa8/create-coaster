@@ -16,8 +16,24 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@sentry/nuxt/module',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxtjs/seo'
   ],
+
+  site: {
+    url: 'https://coasters-simulated.com', // Replace with actual URL if known
+    name: 'Create Coasters Simulated',
+    description: 'Build Theme Parks with realistic physics from Create Aeronautics.',
+    defaultLocale: 'en',
+  },
+
+  app: {
+    head: {
+      templateParams: {
+        separator: '|',
+      },
+    },
+  },
 
   sentry: {
     org: 'arsija-studios',
