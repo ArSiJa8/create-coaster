@@ -47,14 +47,14 @@ const handleModrinthClick = () => {
           <button class="mc-button mc-button-discord" @click="handleDiscordClick">
             <span class="mc-button-title">
               <img src="/images/discord-logo.png" alt="Discord" class="discord-icon-png" />
-              Join Discord
+              <span class="button-text">Join Discord</span>
             </span>
           </button>
 
           <button class="mc-button mc-button-modrinth" @click="handleModrinthClick">
             <span class="mc-button-title">
               <Icon name="simple-icons:modrinth" class="modrinth-icon" />
-              Modrinth
+              <span class="button-text">Modrinth</span>
             </span>
           </button>
         </div>
@@ -72,8 +72,8 @@ const handleModrinthClick = () => {
   border: none;
   background: none;
   padding: 0;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 11px;
+  font-family: 'minecraftia', monospace;
+  font-size: 14px;
   cursor: pointer;
   user-select: none;
   box-sizing: border-box;
@@ -89,6 +89,11 @@ const handleModrinthClick = () => {
   color: #FFFFFF;
 }
 
+/* Gezielte Korrektur für den Text */
+.button-text {
+  transform: translateY(5px);
+}
+
 
 /* --- DISCORD BUTTON --- */
 .mc-button-discord {
@@ -99,7 +104,6 @@ const handleModrinthClick = () => {
 
 .mc-button-discord .mc-button-title {
   gap: 12px;
-  padding-bottom: 2px;
   background-color: #5865F2;
   text-shadow: 2px 2px 0px #242A66;
   box-shadow: inset -4px -4px 0px #3C45A6, inset 4px 4px 0px #8EA1FF;
@@ -113,21 +117,22 @@ const handleModrinthClick = () => {
 
 .mc-button-discord:active .mc-button-title {
   box-shadow: inset 4px 4px 0px #2B327A, inset -4px -4px 0px #7688FA;
-  padding-top: 4px;
-  padding-bottom: 0px;
+}
+
+.mc-button-discord:active .button-text {
+  transform: translateY(9px);
 }
 
 .discord-icon-png {
   width: 26px;
   height: 26px;
   object-fit: contain;
-  transform: translateY(-1px);
   image-rendering: pixelated;
   image-rendering: crisp-edges;
 }
 
 .mc-button-discord:active .discord-icon-png {
-  transform: translateY(1px);
+  transform: translateY(4px);
 }
 
 
@@ -140,7 +145,6 @@ const handleModrinthClick = () => {
 
 .mc-button-modrinth .mc-button-title {
   gap: 12px;
-  padding-bottom: 2px;
   background-color: #00AF5C;
   text-shadow: 2px 2px 0px #004D28;
   box-shadow: inset -4px -4px 0px #007A40, inset 4px 4px 0px #33C482;
@@ -154,8 +158,10 @@ const handleModrinthClick = () => {
 
 .mc-button-modrinth:active .mc-button-title {
   box-shadow: inset 4px 4px 0px #006635, inset -4px -4px 0px #2EB274;
-  padding-top: 4px;
-  padding-bottom: 0px;
+}
+
+.mc-button-modrinth:active .button-text {
+  transform: translateY(9px);
 }
 
 .modrinth-icon {
@@ -163,11 +169,10 @@ const handleModrinthClick = () => {
   height: 22px;
   color: #ffffff;
   display: block;
-  transform: translateY(-1px);
 }
 
 .mc-button-modrinth:active .modrinth-icon {
-  transform: translateY(1px);
+  transform: translateY(4px);
 }
 
 
@@ -182,7 +187,6 @@ const handleModrinthClick = () => {
 }
 
 .mc-toggle-btn .toggle-title {
-  padding: 0 4px 4px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,10 +209,10 @@ const handleModrinthClick = () => {
 
 .mc-toggle-btn:active .toggle-title {
   box-shadow: inset 4px 4px 0px #333333, inset -4px -4px 0px #bcbcbc;
-  padding-top: 4px;
-  padding-left: 4px;
-  padding-bottom: 0px;
-  padding-right: 0px;
+}
+
+.mc-toggle-btn:active .toggle-icon {
+  transform: translateY(4px);
 }
 
 
