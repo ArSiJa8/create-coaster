@@ -41,7 +41,7 @@ const handleModrinthClick = () => {
 
       <div class="hero-content">
         <h1 class="hero-title">Create Coasters Simulated</h1>
-        <h2 class="hero-subtitle">Build Theme Parks with realistic physics from Create Aeronautics.</h2>
+        <h2 class="hero-subtitle">Build Theme Parks with realistic physics.</h2>
 
         <div class="hero-buttons">
           <button class="mc-button mc-button-discord" @click="handleDiscordClick">
